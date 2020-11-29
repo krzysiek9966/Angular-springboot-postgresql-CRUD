@@ -1,12 +1,21 @@
 .contents {
-    opacity: 0.8;
-    margin-top: 25px;
-    margin-left: 20%;
-    margin-right: 20%;
+  /*opacity: 0.8;*/
+  background-image: url(../assets/bg.jpg);
+  background-position: center;
+  height: 100%;
   }
+
+.mat-drawer-container {
+  /*opacity: 0.8;*/
+  height: 100%;
+}
 
 .forms {
   min-width: 500px;
   margin-left: 10%;
   margin-right: 10%;
+}
+
+.example-sidenav {
+  padding: 30px;
 }

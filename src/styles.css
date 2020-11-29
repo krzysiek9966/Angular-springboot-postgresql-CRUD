@@ -2,13 +2,9 @@
 
 html, body { height: 100%; }
 
-body { 
-    margin: 0; 
-    font-family: Roboto, "Helvetica Neue", sans-serif; 
-    /* background-color: slateblue; */
-    background-image: url(./assets/bg.jpg);
-    background-position: center;
-    /* background-repeat: no-repeat; */
-    /* background-size: 100% 1720px; */
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+     background-color: black;
     height:100%;
       }

@@ -4,28 +4,24 @@ table {
     width: 90%;
     }
 
-  .title-card {
-    margin-bottom: 25px;
-  }
-  
   p {
     font-size: 30px;
     text-align: center;
     color:black;
   }
-  
+
   mat-card {
     background-color: silver;
   }
-  
+
   .text-center {
     text-align: center;
   }
-  
+
   .text-right {
     text-align: right;
   }
-  
+
   .text-left {
     text-align: left;
   }
