@@ -1,0 +1,27 @@
+
+  /* .example-full-width {
+    width: 51%;
+  } */
+
+  /* .register-form {
+    min-width: 150px;
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+  } */
+
+  p {
+    text-align: center;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  
+  .text-left {
+    text-align: left;
+  }

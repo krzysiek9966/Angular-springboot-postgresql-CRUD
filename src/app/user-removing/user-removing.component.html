@@ -1,0 +1,42 @@
+<!-- <p>Romove User</p> -->
+<!-- <mat-card class="forms-card">
+<mat-grid-list cols="1" rowHeight="55">
+
+    <mat-grid-tile></mat-grid-tile>
+
+    <mat-grid-tile>
+        <mat-form-field>
+            <mat-label>Enter any unnecessary user</mat-label>
+            <input matInput placeholder="Username" [(ngModel)]="username" (keydown.enter)="remove()">
+        </mat-form-field>
+    </mat-grid-tile>
+
+    <mat-grid-tile>
+        <h3 *ngIf="result !== ''">Number of users deleted: {{result}}</h3>
+    </mat-grid-tile>
+
+    <mat-grid-tile>
+        <button mat-raised-button color="primary" (click)="remove()">Remove</button>
+    </mat-grid-tile>
+
+  </mat-grid-list>
+</mat-card> -->
+<mat-card style="max-height: 210px;">
+<mat-list>
+    <mat-list-item><p></p></mat-list-item>
+    <mat-list-item>
+        <mat-icon matListIcon>account_box</mat-icon>
+        <mat-form-field>
+            <mat-label>Enter any unnecessary user</mat-label>
+            <input matInput placeholder="Username" [(ngModel)]="username" (keydown.enter)="remove()">
+        </mat-form-field>
+    </mat-list-item>
+    <mat-list-item>
+        <h3 *ngIf="result !== ''">Number of users deleted: {{result}}</h3>
+    </mat-list-item>
+    <mat-list-item>
+        <button mat-raised-button color="primary" (click)="remove()">Remove</button>
+    </mat-list-item>
+</mat-list>
+</mat-card>
+

@@ -1,0 +1,19 @@
+<mat-card class="title-card"><p>User List</p></mat-card>
+    
+    <table  mat-table #table [dataSource]="users">
+        <ng-container  matColumnDef="username">
+            <th mat-header-cell *matHeaderCellDef> Username </th>
+            <td mat-cell *matCellDef="let user"> {{user.username}} </td>
+        </ng-container>
+        <ng-container matColumnDef="email">
+            <th class="text-center" mat-header-cell *matHeaderCellDef> E-mail </th>
+            <td class="text-center" mat-cell *matCellDef="let user"> {{user.email}} </td>
+        </ng-container>
+        <ng-container matColumnDef="password">
+            <th class="text-center" mat-header-cell *matHeaderCellDef > Password </th>
+            <td class="text-center" mat-cell *matCellDef="let user"> {{user.password}} </td>
+        </ng-container>
+        
+        <tr mat-header-row *matHeaderRowDef="['username','email', 'password']"></tr>
+        <tr mat-row *matRowDef="let row; columns: ['username','email', 'password'];"></tr>
+    </table>
