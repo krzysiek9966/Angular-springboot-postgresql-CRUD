@@ -1,5 +1,4 @@
 import { Component, OnInit} from '@angular/core';
-import { InteractionService } from '../interaction.service';
 import { User } from '../user';
 import { UserManagerService } from '../user-manager.service';
 
@@ -11,9 +10,9 @@ import { UserManagerService } from '../user-manager.service';
 export class RegistrationComponent implements OnInit {
   user: User = new User("","","");
   message: any;
-  
 
-  constructor(private service: UserManagerService, private interaction: InteractionService) { }
+
+  constructor(private service: UserManagerService) { }
 
   ngOnInit(): void {
   }
@@ -21,15 +20,11 @@ export class RegistrationComponent implements OnInit {
   public register(){
     let resp = this.service.addUser(this.user);
     resp.subscribe((data) => this.message = data)
-    this.changeEvent();
-  }
-
-  public changeEvent(){
-    this.interaction.sendChangeEvent();
+    this.user = new User("","","");
   }
 
   private validation(){
-    if(this.user.username == "") return 
+    if(this.user.username == "") return
   }
 
 }

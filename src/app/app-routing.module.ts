@@ -5,10 +5,10 @@ import { UserListComponent } from './user-list/user-list.component';
 import { UserRemovingComponent } from './user-removing/user-removing.component';
 
 const routes: Routes = [
-  {path: "", redirectTo: "register", pathMatch: "full"},
-  {path: "register", component: RegistrationComponent},
-  {path: "getAll", component: UserListComponent},
-  {path: "remove", component: UserRemovingComponent}
+  {path: "", redirectTo: "userList", pathMatch: "full"},
+  {path: "addUser", component: RegistrationComponent},
+  {path: "userList", component: UserListComponent},
+  {path: "removeUser", component: UserRemovingComponent}
 ];
 
 @NgModule({

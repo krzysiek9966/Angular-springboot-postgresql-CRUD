@@ -1,55 +1,40 @@
 <mat-drawer-container class="example-container" autosize>
-  <mat-drawer #drawer class="example-sidenav" mode="push">
+  <mat-drawer #drawer class="example-sidenav" mode="side">
     <mat-list>
       <mat-list-item>
-        <button mat-raised-button>
+        <mat-icon>list</mat-icon>
+        <button mat-button [routerLink]="'/userList'">
           User List
         </button>
       </mat-list-item>
       <mat-list-item>
-        <button mat-raised-button>
+        <mat-icon>person_add_alt_1</mat-icon>
+        <button mat-button [routerLink]="'/addUser'">
           Add User
         </button>
       </mat-list-item>
       <mat-list-item>
-        <button mat-raised-button>
+        <mat-icon>person_remove</mat-icon>
+        <button mat-button [routerLink]="'/removeUser'">
           Remove User
         </button>
       </mat-list-item>
     </mat-list>
-
-    <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
-    <button (click)="showFiller = !showFiller" mat-raised-button>
-      Toggle extra text
-    </button>
   </mat-drawer>
 
 
-<div class="contents">
-<p>
-  <mat-toolbar color="primary">
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="drawer.toggle()">
-      <mat-icon>menu</mat-icon>
-    </button>
-    <mat-icon>build_circle</mat-icon>
-    <span>CRUD App</span>
-  </mat-toolbar>
-</p>
+<div class="content">
+  <p>
+    <mat-toolbar color="primary">
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="drawer.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <mat-icon>build_circle</mat-icon>
+      <span>CRUD App</span>
+    </mat-toolbar>
+  </p>
 
+  <router-outlet></router-outlet>
 
-
-    <app-user-list></app-user-list>
-
-    <mat-grid-list class="forms" cols="2" rowHeight="fit" style="height: 300px;">
-
-      <mat-grid-tile>
-        <app-registration></app-registration>
-      </mat-grid-tile>
-
-      <mat-grid-tile>
-        <app-user-removing></app-user-removing>
-      </mat-grid-tile>
-
-    </mat-grid-list>
 </div>
 </mat-drawer-container>
