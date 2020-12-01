@@ -1,12 +1,13 @@
-.content {
-  width: 100%;
-}
+  .content {
+    width: 100%;
+  }
 
-.mat-list {
-  display: block;
-  width: 230px;
-  margin: 100px auto 0 auto;
-}
+  .mat-list {
+    display: block;
+    width: 230px;
+    margin: 100px auto 0 auto;
+  }
+
   p {
     text-align: center;
   }

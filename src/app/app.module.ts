@@ -11,6 +11,7 @@ import { RegistrationComponent } from './registration/registration.component';
 import { UserManagerService } from './user-manager.service';
 import { UserRemovingComponent } from './user-removing/user-removing.component';
 import { MaterialModule } from './material/material.module';
+import { UserUpdateComponent } from './user-update/user-update.component';
 
 
 
@@ -19,7 +20,8 @@ import { MaterialModule } from './material/material.module';
     AppComponent,
     UserListComponent,
     RegistrationComponent,
-    UserRemovingComponent
+    UserRemovingComponent,
+    UserUpdateComponent
   ],
   imports: [
     BrowserModule,

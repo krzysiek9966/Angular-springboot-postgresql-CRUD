@@ -12,6 +12,10 @@ export class AppComponent {
   showFiller = false;
   components: string[] = ['User-list', 'Add-user', 'Remove-user'];
   currComponent: string = 'User-list';
+
+  public print(message: string){
+    console.log(message);
+  }
 }
 
 

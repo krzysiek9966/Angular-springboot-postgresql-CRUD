@@ -1,0 +1,31 @@
+<div class="content">
+  <mat-list>
+    <mat-list-item>
+      <mat-icon matListIcon>account_box</mat-icon>
+      <mat-form-field>
+        <mat-label>Username</mat-label>
+        <input matInput placeholder="Username" type="text" [(ngModel)] = "user.username">
+      </mat-form-field>
+    </mat-list-item>
+
+    <mat-list-item>
+      <mat-icon matListIcon>email</mat-icon>
+      <mat-form-field>
+        <mat-label>E-mail</mat-label>
+        <input matInput placeholder="E-mail" type="text" [(ngModel)] = "user.email">
+      </mat-form-field>
+    </mat-list-item>
+
+    <mat-list-item>
+      <mat-icon matListIcon>lock</mat-icon>
+      <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input matInput placeholder="Password" type="text" [(ngModel)]="user.password" (keydown.enter)="update()">
+      </mat-form-field>
+    </mat-list-item>
+
+    <mat-list-item>
+      <button mat-raised-button color="primary" (click)="update()">Update</button>
+    </mat-list-item>
+  </mat-list>
+</div>

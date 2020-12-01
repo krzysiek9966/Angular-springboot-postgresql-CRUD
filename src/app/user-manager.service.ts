@@ -14,13 +14,17 @@ export class UserManagerService {
   }
 
   public addUser(user: User){
-    return this.http.post("http://localhost:8080/api/users/add", 
-    user, 
+    return this.http.post("http://localhost:8080/api/users/add", user,
     {responseType: 'text' as 'json'});
   }
 
   public deleteUser(username: string) {
     return this.http.delete(`http://localhost:8080/api/users/deleteByUsername?username=${username}`);
+  }
+
+  public updateUser(user: User){
+    return this.http.put("http://localhost:8080/api/users/update", user,
+      {responseType: 'text' as 'json'});
   }
 
 }
