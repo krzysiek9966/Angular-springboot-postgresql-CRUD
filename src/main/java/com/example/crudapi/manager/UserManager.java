@@ -41,6 +41,13 @@ public class UserManager {
         return userRepo.deleteByUsername(username);
     }
 
+    @Transactional
+    public void updateByUsername(String email, String password, String username) {
+      if (password == null|password == "") userRepo.updateEmailByUsername(email, username);
+      else if(email == null|email == "") userRepo.updatePasswordByUsername(password, username);
+      else userRepo.updateByUsername(email, password, username);
+    }
+
     @EventListener(ApplicationReadyEvent.class)
     public void fillDB() {
 //        save(new User(7L,"ewe", "e@gmail.com", "ewe"));   //Dodanie rekordu przy uruchomieniu

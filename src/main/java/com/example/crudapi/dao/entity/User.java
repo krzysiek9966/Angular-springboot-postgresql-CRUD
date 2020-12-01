@@ -1,9 +1,11 @@
 package com.example.crudapi.dao.entity;
 
+import org.springframework.context.annotation.Primary;
+
 import javax.persistence.*;
 
 @Entity
-@Table(name = "User_Entity")
+@Table(name = "user_entity")
 public class User {
 
     @Id

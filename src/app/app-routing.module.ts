@@ -10,7 +10,7 @@ const routes: Routes = [
   {path: "addUser", component: RegistrationComponent},
   {path: "userList", component: UserListComponent},
   {path: "removeUser", component: UserRemovingComponent},
-  {path: "updateUser", component: UserUpdateComponent}
+  {path: "updateUser/:updatingField", component: UserUpdateComponent}
 ];
 
 @NgModule({

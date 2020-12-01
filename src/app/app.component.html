@@ -30,8 +30,8 @@
           Update User
         </button>
         <mat-menu #updateFields="matMenu">
-          <button mat-menu-item (click)="print('email')">Email</button>
-          <button mat-menu-item (click)="print('password')">Password</button>
+          <button mat-menu-item [routerLink]="['/updateUser', 1]">Email</button>
+          <button mat-menu-item [routerLink]="['/updateUser', 2]">Password</button>
         </mat-menu>
       </mat-list-item>
 

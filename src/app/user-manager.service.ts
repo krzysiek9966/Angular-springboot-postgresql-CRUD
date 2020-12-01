@@ -23,7 +23,7 @@ export class UserManagerService {
   }
 
   public updateUser(user: User){
-    return this.http.put("http://localhost:8080/api/users/update", user,
+    return this.http.put("http://localhost:8080/api/users/updateByUsername", user,
       {responseType: 'text' as 'json'});
   }
 

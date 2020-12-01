@@ -41,6 +41,12 @@ public class UserApi {
         return users.save(user);
     }
 
+    @PutMapping("/updateByUsername")
+    public  User updateByUsername(@RequestBody User user){
+      users.updateByUsername(user.getEmail(), user.getPassword(), user.getUsername());
+      return user;
+    }
+
     @DeleteMapping("/deleteById")
     public void deleteUser(@RequestParam Long index){
         users.deleteById(index);
